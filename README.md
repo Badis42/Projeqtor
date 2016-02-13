@@ -5,7 +5,7 @@ This Container is a project managment tool called Projeqtor
 ## Make It Short
 
 You have to link this container with a database container (PostgreSQL or Mysql)
-### PostgreSQL
+### Projeqtor with PostgreSQL
 
 PostgreSQL Official Docker Image:
 ~~~~
@@ -17,7 +17,7 @@ $ docker run --name postgres -d \
 $ docker run -d --link postgres:database -p 80:80 --name projeqtor troptop/projeqtor
 ~~~~
 
-### MySQL
+### Projeqtor with MySQL
 
 MySQL Official Docker Image:
 
