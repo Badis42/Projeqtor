@@ -1,0 +1,976 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Planning elements &mdash; ProjeQtOr User guide 5.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/projeqtor.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '5.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="top" title="ProjeQtOr User guide 5.1 documentation" href="index.html" />
+    <link rel="next" title="Real work allocation" href="RealWorkAllocation.html" />
+    <link rel="prev" title="User parameters" href="UserParameter.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="RealWorkAllocation.html" title="Real work allocation"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="UserParameter.html" title="User parameters"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ProjeQtOr User guide 5.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="contents local topic" id="planning-elements">
+<p class="topic-title first">Planning elements</p>
+<ul class="simple">
+<li><a class="reference internal" href="#project" id="id15">Project</a></li>
+<li><a class="reference internal" href="#activity" id="id16">Activity</a></li>
+<li><a class="reference internal" href="#milestone" id="id17">Milestone</a></li>
+<li><a class="reference internal" href="#common-sections" id="id18">Common sections</a><ul>
+<li><a class="reference internal" href="#assignment" id="id19">Assignment</a></li>
+<li><a class="reference internal" href="#progress" id="id20">Progress</a></li>
+<li><a class="reference internal" href="#predecessor-and-sucessor-element" id="id21">Predecessor and Sucessor element</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<p>Planning elements are : <a class="reference internal" href="#project"><span>Project</span></a>, <a class="reference internal" href="#activity"><span>Activity</span></a>, <a class="reference internal" href="#pe-milestone-label"><span>Milestone</span></a>, <a class="reference internal" href="RequirementsTest.html#test-session"><span>Test session</span></a>, <a class="reference internal" href="ReviewLogs.html#meeting"><span>Meetings</span></a> and <a class="reference internal" href="ReviewLogs.html#periodic-meeting"><span>Periodic meetings</span></a>.</p>
+<p>All previous elements can be planning, following with Gantt chart.</p>
+<div class="topic">
+<p class="topic-title first">Progress</p>
+<ul class="simple">
+<li>All planning elements have own progress data.</li>
+<li>Some metrics are consolidate on top activities and project.</li>
+</ul>
+</div>
+<div class="section" id="project">
+<span id="index-0"></span><span id="id1"></span><h1><a class="toc-backref" href="#planning-elements">Project</a><a class="headerlink" href="#project" title="Permalink to this headline">¶</a></h1>
+<div class="sidebar">
+<p class="first sidebar-title">Other sections</p>
+<ul class="last simple">
+<li><a class="reference internal" href="#pe-progress-section-label"><span>Progress</span></a></li>
+<li><a class="reference internal" href="CommonSections.html#affectations-section"><span>Affectations</span></a></li>
+<li><a class="reference internal" href="#pe-predsuces-element-section-label"><span>Predecessor and Sucessor element</span></a></li>
+<li><a class="reference internal" href="CommonSections.html#linkelement-section"><span>Linked element</span></a></li>
+<li><a class="reference internal" href="CommonSections.html#attachment-section"><span>Attachments</span></a></li>
+<li><a class="reference internal" href="CommonSections.html#note-section"><span>Notes</span></a></li>
+</ul>
+</div>
+<p class="rubric">Section: Description</p>
+<table border="1" class="docutils" id="id3">
+<caption><span class="caption-text">Project description section fields</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></td>
+<td>Unique Id for the project.</td>
+</tr>
+<tr class="row-odd"><td><strong>Name</strong></td>
+<td>Short name of the project.</td>
+</tr>
+<tr class="row-even"><td><strong>Type</strong></td>
+<td>Type of project.</td>
+</tr>
+<tr class="row-odd"><td>Customer</td>
+<td>The customer of the project.</td>
+</tr>
+<tr class="row-even"><td>Bill contact</td>
+<td>Billing contact.</td>
+</tr>
+<tr class="row-odd"><td>Project code</td>
+<td>Code of the project.</td>
+</tr>
+<tr class="row-even"><td>Contract code</td>
+<td>Code of the contract of the project.</td>
+</tr>
+<tr class="row-odd"><td>Customer code</td>
+<td>Code of the customer of the project.</td>
+</tr>
+<tr class="row-even"><td>Is sub-project of</td>
+<td>Name of the top project if this project is a sub-project.</td>
+</tr>
+<tr class="row-odd"><td>Sponsor</td>
+<td>Name of the sponsor of the project.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="Concept.html#term-project-manager"><span class="xref std std-term">Manager</span></a></td>
+<td>Name of the resource who manages the project.</td>
+</tr>
+<tr class="row-odd"><td>Color</td>
+<td>Color of the project, to be displayed in some reports.</td>
+</tr>
+<tr class="row-even"><td><strong>Status</strong></td>
+<td>Actual <a class="reference internal" href="Glossary.html#term-status"><span class="xref std std-term">status</span></a> of the project.</td>
+</tr>
+<tr class="row-odd"><td>Health status</td>
+<td>Global health status of the project, displayed on today screen.</td>
+</tr>
+<tr class="row-even"><td>Quality level</td>
+<td>Estimation of quality level of project (result of audits).</td>
+</tr>
+<tr class="row-odd"><td>Trend</td>
+<td>Trend of global project health.</td>
+</tr>
+<tr class="row-even"><td>Overall progress</td>
+<td>Overall progress to be selected in a defined list.</td>
+</tr>
+<tr class="row-odd"><td>Fix planning</td>
+<td>Selector to fix the planning of the project, and its sub-projects.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-done"><span class="xref std std-term">Done</span></a></td>
+<td>Flag to indicate that project is been finished.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></td>
+<td>Flag to indicate that project is archived.</td>
+</tr>
+<tr class="row-even"><td>Cancelled</td>
+<td>Flag to indicate that project is cancelled.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="Glossary.html#term-description"><span class="xref std std-term">Description</span></a></td>
+<td>Complete description of the project.</td>
+</tr>
+<tr class="row-even"><td>Objectives</td>
+<td>Objectives of the project.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>* Required field</strong></p>
+<p class="rubric">Section: Version linked to this project</p>
+<p class="rubric">Section: Sub projects</p>
+</div>
+<div class="section" id="activity">
+<span id="index-1"></span><span id="id2"></span><h1><a class="toc-backref" href="#planning-elements">Activity</a><a class="headerlink" href="#activity" title="Permalink to this headline">¶</a></h1>
+<p>An activity is a kind of task that must be planned, or that regroups other activities.</p>
+<p>It is generally a long time activity, that will be assigned to one or more resources.</p>
+<p>Activities will appear on Gantt planning view.</p>
+<p>For instance, you can manage as activities :</p>
+<ul class="simple">
+<li>Planned tasks.</li>
+<li>Change requests.</li>
+<li>Phases.</li>
+<li>Versions or releases.</li>
+</ul>
+<p class="rubric">Activities regroupment</p>
+<ul class="simple">
+<li>Activities can have parents to regroup activities.</li>
+<li>So a WBS (work breakdown structure number) is calculated for the activities.</li>
+<li>Activities can be sorted inside their parent activity, on the Gantt planning view, using drag and drop.</li>
+<li>Parent activity must belong to the same project.</li>
+</ul>
+<p class="rubric">Assigned ressources</p>
+<ul class="simple">
+<li>Resources are can be assigned to activities.</li>
+<li>This means that some work is planned on this activity for the resources.</li>
+<li>See : <a class="reference internal" href="#pe-assignment-section-label"><span>Assignment</span></a></li>
+</ul>
+<div class="sidebar">
+<p class="first sidebar-title">Other sections</p>
+<ul class="last simple">
+<li><a class="reference internal" href="#pe-assignment-section-label"><span>Assignment</span></a></li>
+<li><a class="reference internal" href="#pe-progress-section-label"><span>Progress</span></a></li>
+<li><a class="reference internal" href="#pe-predsuces-element-section-label"><span>Predecessor and Sucessor element</span></a></li>
+<li><a class="reference internal" href="CommonSections.html#linkelement-section"><span>Linked element</span></a></li>
+<li><a class="reference internal" href="CommonSections.html#attachment-section"><span>Attachments</span></a></li>
+<li><a class="reference internal" href="CommonSections.html#note-section"><span>Notes</span></a></li>
+</ul>
+</div>
+<p class="rubric">Section: Description</p>
+<table border="1" class="docutils" id="id4">
+<caption><span class="caption-text">Activity description section fields</span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></td>
+<td>Unique Id for the activity.</td>
+</tr>
+<tr class="row-odd"><td><strong>Name</strong></td>
+<td>Short description of the activity.</td>
+</tr>
+<tr class="row-even"><td><strong>Activity type</strong></td>
+<td>Type of activity.</td>
+</tr>
+<tr class="row-odd"><td><strong>Project</strong></td>
+<td>The project concerned by the activity.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-external-reference"><span class="xref std std-term">External reference</span></a></td>
+<td>External reference of the activity.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="Concept.html#term-requestor"><span class="xref std std-term">Requestor</span></a></td>
+<td>Contact at the origin of the activity.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-origin"><span class="xref std std-term">Origin</span></a></td>
+<td>Element which is the origin of the activity.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="Glossary.html#term-description"><span class="xref std std-term">Description</span></a></td>
+<td>Complete description of the activity.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>* Required field</strong></p>
+<p class="rubric">Section: Treatment</p>
+<table border="1" class="docutils" id="id5">
+<caption><span class="caption-text">Activity treatment section fields</span><a class="headerlink" href="#id5" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Parent activity</td>
+<td>Parent activity for grouping purpose.</td>
+</tr>
+<tr class="row-odd"><td><strong>Status</strong></td>
+<td>Actual <a class="reference internal" href="Glossary.html#term-status"><span class="xref std std-term">status</span></a> of the activity.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="Concept.html#term-responsible"><span class="xref std std-term">Responsible</span></a></td>
+<td>Resource who is responsible for the activity.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="Glossary.html#term-handled"><span class="xref std std-term">Handled</span></a></td>
+<td>Flag to indicate that activity is taken into account.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-done"><span class="xref std std-term">Done</span></a></td>
+<td>Flag to indicate that activity has been treated.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></td>
+<td>Flag to indicate that activity is archived.</td>
+</tr>
+<tr class="row-even"><td>Cancelled</td>
+<td>Flag to indicate that activity is cancelled.</td>
+</tr>
+<tr class="row-odd"><td>Target version</td>
+<td>The target version of the product that will deliver the object of the activity.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-result"><span class="xref std std-term">Result</span></a></td>
+<td>Complete description of the treatment done on the activity.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>* Required field</strong></p>
+</div>
+<div class="section" id="milestone">
+<span id="pe-milestone-label"></span><span id="index-2"></span><h1><a class="toc-backref" href="#planning-elements">Milestone</a><a class="headerlink" href="#milestone" title="Permalink to this headline">¶</a></h1>
+<p>A Milestone is a flag in the planning, to point out key dates.</p>
+<p>Milestones are commonly used tom check delivery dates.</p>
+<p>They can also by used to highlight transition from one phase to the following one.</p>
+<p>Opposite to Activities, Milestones have no duration and no work.</p>
+<div class="topic">
+<p class="topic-title first">Floating milestone</p>
+<ul class="simple">
+<li>This milestone will automatically move to take into account dependencies.</li>
+</ul>
+</div>
+<div class="topic">
+<p class="topic-title first">Fixed milestone</p>
+<ul class="simple">
+<li>This milestone is fixed in the planning, not taking into account predecessor dependencies.</li>
+<li>This kind of milestone is interesting for instance to set-up start date for some tasks.</li>
+</ul>
+</div>
+<div class="sidebar">
+<p class="first sidebar-title">Other sections</p>
+<ul class="last simple">
+<li><a class="reference internal" href="#pe-predsuces-element-section-label"><span>Predecessor and Sucessor element</span></a></li>
+<li><a class="reference internal" href="CommonSections.html#linkelement-section"><span>Linked element</span></a></li>
+<li><a class="reference internal" href="CommonSections.html#attachment-section"><span>Attachments</span></a></li>
+<li><a class="reference internal" href="CommonSections.html#note-section"><span>Notes</span></a></li>
+</ul>
+</div>
+<p class="rubric">Section: Description</p>
+<table border="1" class="docutils" id="id6">
+<caption><span class="caption-text">Milestone description section fields</span><a class="headerlink" href="#id6" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></td>
+<td>Unique Id for the milestone.</td>
+</tr>
+<tr class="row-odd"><td><strong>Name</strong></td>
+<td>Short description of the milestone.</td>
+</tr>
+<tr class="row-even"><td><strong>Milestone type</strong></td>
+<td>Type of milestone.</td>
+</tr>
+<tr class="row-odd"><td><strong>Project</strong></td>
+<td>The project concerned by the milestone.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-origin"><span class="xref std std-term">Origin</span></a></td>
+<td>Element which is the origin of the milestone.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="Glossary.html#term-description"><span class="xref std std-term">Description</span></a></td>
+<td>Long description of the milestone.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>* Required field</strong></p>
+<p class="rubric">Section: Treatment</p>
+<table border="1" class="docutils" id="id7">
+<caption><span class="caption-text">Milestone treatment section fields</span><a class="headerlink" href="#id7" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Parent activity</td>
+<td>Parent activity for grouping purpose.</td>
+</tr>
+<tr class="row-odd"><td><strong>Status</strong></td>
+<td>Actual <a class="reference internal" href="Glossary.html#term-status"><span class="xref std std-term">status</span></a> of the milestone.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="Concept.html#term-responsible"><span class="xref std std-term">Responsible</span></a></td>
+<td>Resource who is responsible for the milestone.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="Glossary.html#term-handled"><span class="xref std std-term">Handled</span></a></td>
+<td>Flag to indicate that milestone is taken into account.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-done"><span class="xref std std-term">Done</span></a></td>
+<td>Flag to indicate that milestone has been treated.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></td>
+<td>Flag to indicate that milestone is archived.</td>
+</tr>
+<tr class="row-even"><td>Cancelled</td>
+<td>Flag to indicate that milestone is cancelled.</td>
+</tr>
+<tr class="row-odd"><td>Target version</td>
+<td>The target version of the product that will deliver the object of the milestone.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-result"><span class="xref std std-term">Result</span></a></td>
+<td>Complete description of the treatment done on the milestone.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>* Required field</strong></p>
+<p class="rubric">Section: Progress</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Validated due date</td>
+<td>Committed end date : milestone should not end later.</td>
+</tr>
+<tr class="row-odd"><td>Planned due date</td>
+<td>Calculated end date, taking into account all the constraints.</td>
+</tr>
+<tr class="row-even"><td>Real due date</td>
+<td>Real end date, when milestone is set to “done”.</td>
+</tr>
+<tr class="row-odd"><td>Requested due date</td>
+<td>Wished end date.</td>
+</tr>
+</tbody>
+</table>
+<div class="topic">
+<p class="topic-title first">Field: <a class="reference internal" href="Glossary.html#term-wbs"><span class="xref std std-term">WBS</span></a></p>
+<ul class="simple">
+<li>Hierarchical position of the milestone in the global planning.</li>
+</ul>
+</div>
+<div class="topic">
+<p class="topic-title first">List of value: Planning mode</p>
+<ul class="simple">
+<li>Planning mode for the milestone (floating or fixed).</li>
+</ul>
+</div>
+</div>
+<div class="section" id="common-sections">
+<h1><a class="toc-backref" href="#planning-elements">Common sections</a><a class="headerlink" href="#common-sections" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="assignment">
+<span id="pe-assignment-section-label"></span><h2><a class="toc-backref" href="#planning-elements">Assignment</a><a class="headerlink" href="#assignment" title="Permalink to this headline">¶</a></h2>
+<p>Resources can be assigned to activities.</p>
+<p>It is possible to assign several times the same resource to an activity.</p>
+<p>It can for instance be used to add extra work without modifying initial assignment.</p>
+<div class="topic">
+<p class="topic-title first">Go to</p>
+<ul class="simple">
+<li>Click on the resource name will directly move to the resource.</li>
+</ul>
+</div>
+<p class="rubric">Project affectaion</p>
+<ul class="simple">
+<li>Only resources affected to the project of the activity can be assigned.</li>
+<li>Affectations may have start and end dates.</li>
+<li>So, for a given assignment planned work will not start before affectation start date on project of the activity and will stop on affectation end date.</li>
+<li>This can lead to incompletely planned tasks. These would appear as brown bars in the Gantt view.</li>
+</ul>
+<p class="rubric">Assignment Popup</p>
+<p>Click on <img alt="Button add" src="_images/smallButtonAdd.png" /> to assign a new resource. An &#8220;Assignment&#8221; pop up will be displayed.</p>
+<p>Click on <img alt="Button edit" src="_images/smallButtonEdit.png" /> to modify the assignment.</p>
+<p>Click on <img alt="Button icon delete" src="_images/buttonIconDelete.png" /> to delete the assignment.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>If real work exists for an assignment, it can not be deleted.</li>
+</ul>
+</div>
+<div class="figure align-center" id="id8">
+<img alt="Assignment dialog box" src="_images/BOX_Assignment.png" />
+<p class="caption"><span class="caption-text">Assignment dialog box</span></p>
+</div>
+<table border="1" class="docutils" id="id9">
+<caption><span class="caption-text">Assignment dialog box fields</span><a class="headerlink" href="#id9" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Resource</td>
+<td>Name of the resource assigned to the activity.</td>
+</tr>
+<tr class="row-odd"><td>Function</td>
+<td>The function of the resource on this assignment.</td>
+</tr>
+<tr class="row-even"><td>Cost</td>
+<td>The daily cost of the assignment.</td>
+</tr>
+<tr class="row-odd"><td>Rate</td>
+<td>The max rate (in %) to plan the resource on the activity by day.</td>
+</tr>
+<tr class="row-even"><td>Assigned work</td>
+<td>Work initially planned to complete the task.</td>
+</tr>
+<tr class="row-odd"><td>Real work</td>
+<td>Real work entered by the resource on his weekly report, on the “real work allocation” screen.</td>
+</tr>
+<tr class="row-even"><td>Left work</td>
+<td>Work left to complete the task.</td>
+</tr>
+<tr class="row-odd"><td>Planned work</td>
+<td>The new total work planned to complete the task.</td>
+</tr>
+<tr class="row-even"><td>Comments</td>
+<td>Any comment on the affectation.</td>
+</tr>
+</tbody>
+</table>
+<div class="topic">
+<p class="topic-title first">Fields: Function and Cost</p>
+<ul class="simple">
+<li>Function determine the daily cost of the assignment.</li>
+<li>Cost is automatically updated from the function of the resource.</li>
+</ul>
+</div>
+<div class="topic">
+<p class="topic-title first">Field: Rate</p>
+<ul class="simple">
+<li>For instance, if rate is 50%, the resource will not be planned more than half days on the activity.</li>
+</ul>
+</div>
+<div class="topic">
+<p class="topic-title first">Field: Left work</p>
+<ul class="simple">
+<li>Calculated as “Assigned Work” – “Real Work”.</li>
+<li>Must be updated by the resource on the “real work allocation” screen to reflect the really estimated work needed to complete the task.</li>
+</ul>
+</div>
+<div class="topic">
+<p class="topic-title first">Field: Planned work</p>
+<ul class="simple">
+<li>“planned work” = “real work” + “left work”</li>
+</ul>
+</div>
+<div class="topic">
+<p class="topic-title first">Field: Comments</p>
+<ul class="simple">
+<li>When a comment exists, the <img alt="Note" src="_images/note.png" /> icon will appear on the  Assignment section, and on the description of the activity on the “real work allocation” screen.</li>
+<li>Moving the mouse over the description will display the comment.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="progress">
+<span id="pe-progress-section-label"></span><h2><a class="toc-backref" href="#planning-elements">Progress</a><a class="headerlink" href="#progress" title="Permalink to this headline">¶</a></h2>
+<p>The progress allows to follow up planning element.</p>
+<p>This section cover progress to planning element : project, activity and test session.</p>
+<div class="topic">
+<p class="topic-title first">Reassessed metrics</p>
+<ul class="simple">
+<li>Reassessed is the sum of real and left metrics.</li>
+</ul>
+</div>
+<div class="topic">
+<p class="topic-title first">Expense reassessed metrics</p>
+<ul class="simple">
+<li>Assigned minus real metrics.</li>
+</ul>
+</div>
+<div class="topic">
+<p class="topic-title first">Consolidating metrics</p>
+<ul class="simple">
+<li>fdfdf</li>
+</ul>
+</div>
+<div class="topic">
+<p class="topic-title first">Real metrics</p>
+<ul class="simple">
+<li>Real metrics input entered by an resource on the “Real work allocation” screen.</li>
+</ul>
+</div>
+<p class="rubric">Duration metrics</p>
+<ul class="simple">
+<li>Allow to determine planning elements duration for project, activity and test session.</li>
+</ul>
+<div class="topic">
+<p class="topic-title first">Calculating duration</p>
+<ul class="simple">
+<li>Duration is the <strong>work days</strong> numbers between end and start dates.</li>
+</ul>
+</div>
+<div class="topic">
+<p class="topic-title first">End date</p>
+<ul class="simple">
+<li>If not set, end date is the start date + duration.</li>
+</ul>
+</div>
+<table border="1" class="docutils" id="id10">
+<caption><span class="caption-text">Duration metrics fields</span><a class="headerlink" href="#id10" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Validated start date</td>
+<td>Planning element should not start later.</td>
+</tr>
+<tr class="row-odd"><td>Validated end date</td>
+<td>Planning element should not end later.</td>
+</tr>
+<tr class="row-even"><td>Validated duration</td>
+<td>Planning element should not last longer.</td>
+</tr>
+<tr class="row-odd"><td>Planned start date</td>
+<td>Calculated start date, taking into account all the constraints.</td>
+</tr>
+<tr class="row-even"><td>Planned end date</td>
+<td>Calculated end date, taking into account all the constraints.</td>
+</tr>
+<tr class="row-odd"><td>Planned duration</td>
+<td>Calculated duration.</td>
+</tr>
+<tr class="row-even"><td>Real start date</td>
+<td>Date of the first real work input.</td>
+</tr>
+<tr class="row-odd"><td>Real end date</td>
+<td>Date of the last real work input.</td>
+</tr>
+<tr class="row-even"><td>Real duration</td>
+<td>Calculated duration.</td>
+</tr>
+<tr class="row-odd"><td>Requested start date</td>
+<td>Wished start date.</td>
+</tr>
+<tr class="row-even"><td>Requested end date</td>
+<td>Wished end date.</td>
+</tr>
+<tr class="row-odd"><td>Requested duration</td>
+<td>Wished duration.</td>
+</tr>
+</tbody>
+</table>
+<div class="topic">
+<p class="topic-title first">Field: Real end date</p>
+<ul class="simple">
+<li>The real end date appearing only when planning element status is &#8220;done&#8221;.</li>
+</ul>
+</div>
+<p class="rubric">Work metrics</p>
+<ul class="simple">
+<li>Planning elements work is the sum of tasks like activity, test session and meeting.</li>
+</ul>
+<table border="1" class="docutils" id="id11">
+<caption><span class="caption-text">Work metrics fields</span><a class="headerlink" href="#id11" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Validated work</td>
+<td>Work of the planning element should not be more.</td>
+</tr>
+<tr class="row-odd"><td>Assigned work</td>
+<td>Sum of all the work for the assignments on the planning element.</td>
+</tr>
+<tr class="row-even"><td>Real work</td>
+<td>Sum of all the work really spent on the planning element.</td>
+</tr>
+<tr class="row-odd"><td>Left work</td>
+<td>Left work to complete.</td>
+</tr>
+<tr class="row-even"><td>Reassessed work</td>
+<td>Work needed to complete.</td>
+</tr>
+<tr class="row-odd"><td>Progress</td>
+<td>Actual progress of the work, in percent real under planned.</td>
+</tr>
+<tr class="row-even"><td>Expected</td>
+<td>Expected progress of work, in percent real under validated.</td>
+</tr>
+<tr class="row-odd"><td>Margin</td>
+<td>Margin between validated and planned work.</td>
+</tr>
+</tbody>
+</table>
+<div class="topic">
+<p class="topic-title first">Field: Margin</p>
+<ul class="simple">
+<li>Metrics available only in project progress section.</li>
+</ul>
+</div>
+<p class="rubric">Cost metrics</p>
+<div class="topic">
+<p class="topic-title first">Planning elements cost</p>
+<ul class="simple">
+<li>Planning elements cost is the sum of tasks like activity, test session and meeting.</li>
+</ul>
+</div>
+<div class="topic">
+<p class="topic-title first">Expense cost</p>
+<ul class="simple">
+<li>Expense cost is the sum of individual and project expense.</li>
+<li>Metrics available only in project progress section.</li>
+</ul>
+</div>
+<table border="1" class="docutils" id="id12">
+<caption><span class="caption-text">Cost metrics fields</span><a class="headerlink" href="#id12" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Validated cost</td>
+<td>Cost of the planning element should not be more.</td>
+</tr>
+<tr class="row-odd"><td>Assigned cost</td>
+<td>Sum of all the cost for the assignments on the planning element.</td>
+</tr>
+<tr class="row-even"><td>Real cost</td>
+<td>Sum of all the cost really spent on the planning.</td>
+</tr>
+<tr class="row-odd"><td>Left cost</td>
+<td>Left cost to complete.</td>
+</tr>
+<tr class="row-even"><td>Reassessed cost</td>
+<td>Cost needed to complete.</td>
+</tr>
+<tr class="row-odd"><td>Validated expense</td>
+<td>Expense of the project should not be more.</td>
+</tr>
+<tr class="row-even"><td>Assigned expense</td>
+<td>Sum of all the expense on project for the planned amount.</td>
+</tr>
+<tr class="row-odd"><td>Real expense</td>
+<td>Sum of all the expense on project for the real amount.</td>
+</tr>
+<tr class="row-even"><td>Left expense</td>
+<td>Alaways zero for expense.</td>
+</tr>
+<tr class="row-odd"><td>Reassessed expense</td>
+<td>Sum of all the expense on project for reassessed amount.</td>
+</tr>
+<tr class="row-even"><td>Margin</td>
+<td>Margin between total validated and total planned cost.</td>
+</tr>
+</tbody>
+</table>
+<div class="topic">
+<p class="topic-title first">Field: Margin</p>
+<ul class="simple">
+<li>Metrics available only in project progress section.</li>
+</ul>
+</div>
+<div class="topic">
+<p class="topic-title first">Total cost</p>
+<ul class="simple">
+<li>Sum of planning elements and expense cost.</li>
+<li>Metrics available only in project progress section.</li>
+</ul>
+</div>
+<p class="rubric">Ticket metrics</p>
+<ul class="simple">
+<li>Allows to display global work for tickets linked with the activity.</li>
+<li>Metrics available only in activity progress section.</li>
+</ul>
+<table border="1" class="docutils" id="id13">
+<caption><span class="caption-text">Ticket metrics fields</span><a class="headerlink" href="#id13" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Number</td>
+<td>Numbers of ticket linked with the activity.</td>
+</tr>
+<tr class="row-odd"><td>Estimated</td>
+<td>Sum of all planned work of ticket linked with the activity.</td>
+</tr>
+<tr class="row-even"><td>Real</td>
+<td>Sum of all real work of ticket linked with the activity.</td>
+</tr>
+<tr class="row-odd"><td>Left</td>
+<td>Sum of all left work of ticket linked with the activity.</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Others metrics</p>
+<div class="topic">
+<p class="topic-title first">Field: <a class="reference internal" href="Glossary.html#term-wbs"><span class="xref std std-term">WBS</span></a></p>
+<ul class="simple">
+<li>Hierarchical position of the planning element in the global planning.</li>
+</ul>
+</div>
+<div class="topic">
+<p class="topic-title first">Field: Priority</p>
+<ul class="simple">
+<li><a class="reference internal" href="Glossary.html#term-planning-priority"><span class="xref std std-term">Planning priority</span></a> of the planning element.</li>
+</ul>
+</div>
+<div class="topic">
+<p class="topic-title first">List of values: Planning</p>
+<ul class="simple">
+<li>ddfd</li>
+</ul>
+</div>
+</div>
+<div class="section" id="predecessor-and-sucessor-element">
+<span id="pe-predsuces-element-section-label"></span><h2><a class="toc-backref" href="#planning-elements">Predecessor and Sucessor element</a><a class="headerlink" href="#predecessor-and-sucessor-element" title="Permalink to this headline">¶</a></h2>
+<p>Planning element can have predecessors and successors, to generate dependencies.</p>
+<p>Click <img alt="Button add" src="_images/smallButtonAdd.png" /> on the corresponding section to add a predecessor or successor. An “add predecessor” or “add successor” pop up will be displayed.</p>
+<p>Select the type of element to add as predecessor or successor.</p>
+<ul class="simple">
+<li>The list of items below will then be automatically updated.</li>
+</ul>
+<p>Click on <img alt="Button edit" src="_images/smallButtonEdit.png" /> to edit the dependency.</p>
+<p>Click on <img alt="Button icon delete" src="_images/buttonIconDelete.png" /> to delete the corresponding dependency.</p>
+<div class="figure align-center" id="id14">
+<img alt="Predecessor or Successor element dialog box" src="_images/BOX_PredecessorSuccessorElement.png" />
+<p class="caption"><span class="caption-text">Predecessor or Successor element dialog box</span></p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>Recursive loops are controlled on saving.</li>
+<li>Predecessors and successors must belong to the same project or be a project.</li>
+</ul>
+</div>
+<div class="topic">
+<p class="topic-title first">Linked element</p>
+<ul class="simple">
+<li>Click on <img alt="button icon search" src="_images/buttonIconSearch.png" /> to show element detail.</li>
+<li>Depends on whether the element is selected or not a pop up is displayed.</li>
+<li>Detail about pop up, see <a class="reference internal" href="Gui.html#combo-list-fields"><span>Combo list fields</span></a></li>
+</ul>
+</div>
+<div class="topic">
+<p class="topic-title first">Multi-value selection</p>
+<ul class="simple">
+<li>Multi-line selection is possible using <code class="kbd docutils literal"><span class="pre">Control</span></code> key while clicking.</li>
+</ul>
+</div>
+<div class="topic">
+<p class="topic-title first">Delay (late)</p>
+<ul class="simple">
+<li>Days between predecessor end and successor start.</li>
+</ul>
+</div>
+<div class="topic">
+<p class="topic-title first">Reciprocally interrelated</p>
+<ul class="simple">
+<li>If element A is a predecessor of element B, element B is automatically successor of element A.</li>
+</ul>
+</div>
+<p class="rubric">Dependency information</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Element</td>
+<td>Type and id of the predecessor or successor.</td>
+</tr>
+<tr class="row-odd"><td>Name</td>
+<td>Name of the dependency.</td>
+</tr>
+<tr class="row-even"><td>Date</td>
+<td>Date of creation of the dependency.</td>
+</tr>
+<tr class="row-odd"><td>User</td>
+<td>User who created the dependency.</td>
+</tr>
+<tr class="row-even"><td>Status</td>
+<td>Actual status of the dependency.</td>
+</tr>
+</tbody>
+</table>
+<div class="topic">
+<p class="topic-title first">Go to</p>
+<ul class="simple">
+<li>Click on the name of a predecessor or successor will directly move to it.</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/Projeqtor_Logo_White.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Project</a></li>
+<li><a class="reference internal" href="#activity">Activity</a></li>
+<li><a class="reference internal" href="#milestone">Milestone</a></li>
+<li><a class="reference internal" href="#common-sections">Common sections</a><ul>
+<li><a class="reference internal" href="#assignment">Assignment</a></li>
+<li><a class="reference internal" href="#progress">Progress</a></li>
+<li><a class="reference internal" href="#predecessor-and-sucessor-element">Predecessor and Sucessor element</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="UserParameter.html"
+                        title="previous chapter">User parameters</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="RealWorkAllocation.html"
+                        title="next chapter">Real work allocation</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="RealWorkAllocation.html" title="Real work allocation"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="UserParameter.html" title="User parameters"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ProjeQtOr User guide 5.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2015, ProjeQtOr.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
+    </div>
+  </body>
+</html>

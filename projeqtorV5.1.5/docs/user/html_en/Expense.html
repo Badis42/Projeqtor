@@ -1,0 +1,426 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Expense &mdash; ProjeQtOr User guide 5.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/projeqtor.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '5.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="top" title="ProjeQtOr User guide 5.1 documentation" href="index.html" />
+    <link rel="next" title="Quotations" href="Order.html" />
+    <link rel="prev" title="Requirements" href="RequirementsTest.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="Order.html" title="Quotations"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="RequirementsTest.html" title="Requirements"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ProjeQtOr User guide 5.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="contents local topic" id="expense">
+<span id="index-0"></span><p class="topic-title first">Expense</p>
+<ul class="simple">
+<li><a class="reference internal" href="#individual-expense" id="id6">Individual expense</a></li>
+<li><a class="reference internal" href="#project-expense" id="id7">Project expense</a></li>
+<li><a class="reference internal" href="#expense-detail-lines" id="id8">Expense detail lines</a></li>
+</ul>
+</div>
+<div class="section" id="individual-expense">
+<span id="index-1"></span><span id="id1"></span><h1><a class="toc-backref" href="#expense">Individual expense</a><a class="headerlink" href="#individual-expense" title="Permalink to this headline">¶</a></h1>
+<p>An individual expense stores information about individual costs, such as travel costs or else.</p>
+<p>Individual expense has detail listing for all items of expense.</p>
+<p>This can for instance be used to detail all the expense on one month so that each user opens only one individual expense per month (per project), or detail all the elements of a travel expense.</p>
+<p class="rubric">Planned amount</p>
+<p>Planned amount will help to have an overview of project total costs, even before expense is realized.</p>
+<div class="sidebar">
+<p class="first sidebar-title">Other sections</p>
+<ul class="last simple">
+<li><a class="reference internal" href="#expense-detail-lines"><span>Expense detail lines</span></a></li>
+<li><a class="reference internal" href="CommonSections.html#linkelement-section"><span>Linked element</span></a></li>
+<li><a class="reference internal" href="CommonSections.html#attachment-section"><span>Attachments</span></a></li>
+<li><a class="reference internal" href="CommonSections.html#note-section"><span>Notes</span></a></li>
+</ul>
+</div>
+<p class="rubric">Section: Description</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></td>
+<td>Unique Id for the expense.</td>
+</tr>
+<tr class="row-odd"><td><strong>Name</strong></td>
+<td>Short description of the expense.</td>
+</tr>
+<tr class="row-even"><td><strong>Type</strong></td>
+<td>Type of expense.</td>
+</tr>
+<tr class="row-odd"><td><strong>Resource</strong></td>
+<td>Resource concerned by the expense.</td>
+</tr>
+<tr class="row-even"><td><strong>Project</strong></td>
+<td>The project concerned by the expense.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="Glossary.html#term-description"><span class="xref std std-term">Description</span></a></td>
+<td>Complete description of the expense.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>* Required field</strong></p>
+<p class="rubric">Section: Treatment</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>Status</strong></td>
+<td>Actual <a class="reference internal" href="Glossary.html#term-status"><span class="xref std std-term">status</span></a> of the expense.</td>
+</tr>
+<tr class="row-odd"><td>Planned date</td>
+<td>Planned date of the expense.</td>
+</tr>
+<tr class="row-even"><td>Planned amount</td>
+<td>Planned amount of the expense.</td>
+</tr>
+<tr class="row-odd"><td>Real date</td>
+<td>Real date of the expense.</td>
+</tr>
+<tr class="row-even"><td>Real amount</td>
+<td>Real amount of the expense.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></td>
+<td>Flag to indicate that expense is archived.</td>
+</tr>
+<tr class="row-even"><td>Cancelled</td>
+<td>Flag to indicate that expense is cancelled.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>* Required field</strong></p>
+<div class="topic">
+<p class="topic-title first">Fields: Planned date and amount</p>
+<ul class="simple">
+<li>When planned date or planned amount is set, other must also be set.</li>
+</ul>
+</div>
+<div class="topic">
+<p class="topic-title first">Fields: Real date and amount</p>
+<ul class="simple">
+<li>When real date or real amount is set, other must also be set.</li>
+</ul>
+</div>
+<div class="topic">
+<p class="topic-title first">Field: Real amount</p>
+<ul class="simple">
+<li>If detail lines are entered, real amount is automatically calculated as sum of detail amounts, and is then locked.</li>
+</ul>
+</div>
+<span class="target" id="index-2"></span></div>
+<div class="section" id="project-expense">
+<span id="index-3"></span><span id="id2"></span><h1><a class="toc-backref" href="#expense">Project expense</a><a class="headerlink" href="#project-expense" title="Permalink to this headline">¶</a></h1>
+<p>A project expense stores information about project costs that are not resource costs.</p>
+<p>This can be used for all kinds of project cost :</p>
+<ul class="simple">
+<li>Machines (rent or buy).</li>
+<li>Softwares.</li>
+<li>Office.</li>
+<li>Any logistic item.</li>
+</ul>
+<p class="rubric">Planned amount</p>
+<p>Planned amount will help to have an overview of project total costs, even before expense is realized.</p>
+<div class="sidebar">
+<p class="first sidebar-title">Other sections</p>
+<ul class="last simple">
+<li><a class="reference internal" href="#expense-detail-lines"><span>Expense detail lines</span></a></li>
+<li><a class="reference internal" href="CommonSections.html#linkelement-section"><span>Linked element</span></a></li>
+<li><a class="reference internal" href="CommonSections.html#attachment-section"><span>Attachments</span></a></li>
+<li><a class="reference internal" href="CommonSections.html#note-section"><span>Notes</span></a></li>
+</ul>
+</div>
+<p class="rubric">Section: Description</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></td>
+<td>Unique Id for the expense.</td>
+</tr>
+<tr class="row-odd"><td><strong>Name</strong></td>
+<td>Short description of the expense.</td>
+</tr>
+<tr class="row-even"><td><strong>Type</strong></td>
+<td>Type of expense.</td>
+</tr>
+<tr class="row-odd"><td><strong>Project</strong></td>
+<td>The project concerned by the expense.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-description"><span class="xref std std-term">Description</span></a></td>
+<td>Complete description of the expense.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>* Required field</strong></p>
+<p class="rubric">Section: Treatment</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>Status</strong></td>
+<td>Actual <a class="reference internal" href="Glossary.html#term-status"><span class="xref std std-term">status</span></a> of the expense.</td>
+</tr>
+<tr class="row-odd"><td>Planned date</td>
+<td>Planned date of the expense.</td>
+</tr>
+<tr class="row-even"><td>Planned amount</td>
+<td>Planned amount of the expense.</td>
+</tr>
+<tr class="row-odd"><td>Real date</td>
+<td>Real date of the expense.</td>
+</tr>
+<tr class="row-even"><td>Real amount</td>
+<td>Real amount of the expense.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></td>
+<td>Flag to indicate that expense is archived.</td>
+</tr>
+<tr class="row-even"><td>Cancelled</td>
+<td>Flag to indicate that expense is cancelled.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>* Required field</strong></p>
+<div class="topic">
+<p class="topic-title first">Fields: Planned date and amount</p>
+<ul class="simple">
+<li>When planned date or planned amount is set, other must also be set.</li>
+</ul>
+</div>
+<div class="topic">
+<p class="topic-title first">Fields: Real date and amount</p>
+<ul class="simple">
+<li>When real date or real amount is set, other must also be set.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="expense-detail-lines">
+<span id="index-4"></span><span id="id3"></span><h1><a class="toc-backref" href="#expense">Expense detail lines</a><a class="headerlink" href="#expense-detail-lines" title="Permalink to this headline">¶</a></h1>
+<p class="rubric">Section: Expense detail lines</p>
+<p>This section is common to individual and project expenses.</p>
+<p>It allows to enter detail on expense line.</p>
+<div class="topic">
+<p class="topic-title first">Fields: Real amount and date</p>
+<ul class="simple">
+<li>When a line is entered, expense real amount is automatically updated to sum of lines amount.</li>
+<li>Real date is set with the date in the firts detail line.</li>
+</ul>
+</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Date</td>
+<td>Date of the detail line.</td>
+</tr>
+<tr class="row-odd"><td>Name</td>
+<td>Name of the detail line.</td>
+</tr>
+<tr class="row-even"><td>Type</td>
+<td>Type of expense.</td>
+</tr>
+<tr class="row-odd"><td>Detail</td>
+<td>Detail depends on the type of expense.</td>
+</tr>
+<tr class="row-even"><td>Amount</td>
+<td>Amount of the detail line.</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Detail lines management</p>
+<ul class="simple">
+<li>Click on <img alt="Button add" src="_images/smallButtonAdd.png" /> to add a detail line.</li>
+<li>Click on <img alt="Button edit" src="_images/smallButtonEdit.png" /> to modify an existing detail line.</li>
+<li>Click on <img alt="Button icon delete" src="_images/buttonIconDelete.png" /> to delete the detail line.</li>
+</ul>
+<div class="figure align-center" id="id4">
+<img alt="Expense detail dialog box" src="_images/BOX_ExpenseDetail.png" />
+<p class="caption"><span class="caption-text">Expense detail dialog box</span></p>
+</div>
+<table border="1" class="docutils" id="id5">
+<caption><span class="caption-text">Fields of expense detail dialog box</span><a class="headerlink" href="#id5" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Name</td>
+<td>Name of the detail.</td>
+</tr>
+<tr class="row-odd"><td>Date</td>
+<td>Date of the detail.</td>
+</tr>
+<tr class="row-even"><td>Type</td>
+<td>Type of expense.</td>
+</tr>
+<tr class="row-odd"><td>Amount</td>
+<td>Amount of the detail.</td>
+</tr>
+</tbody>
+</table>
+<div class="topic">
+<p class="topic-title first">Field: Date</p>
+<ul class="simple">
+<li>This allows to input several items, during several days, for the same expense, to have for instance one expense per travel or per month.</li>
+</ul>
+</div>
+<div class="topic">
+<p class="topic-title first">Field: Type</p>
+<ul class="simple">
+<li>Depending on type, new fields will appear to help calculate of amount.</li>
+<li>Available types depending on whether individual or project expense.</li>
+<li>See: <a class="reference internal" href="ListsOfTypes.html#expense-detail-type"><span>Expenses details types</span></a>.</li>
+</ul>
+</div>
+<div class="topic">
+<p class="topic-title first">Field: Amount</p>
+<ul class="simple">
+<li>Automatically calculated from fields depending on type.</li>
+<li>May also be input for type “justified expense”.</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/Projeqtor_Logo_White.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Individual expense</a></li>
+<li><a class="reference internal" href="#project-expense">Project expense</a></li>
+<li><a class="reference internal" href="#expense-detail-lines">Expense detail lines</a></li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="RequirementsTest.html"
+                        title="previous chapter">Requirements</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="Order.html"
+                        title="next chapter">Quotations</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="Order.html" title="Quotations"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="RequirementsTest.html" title="Requirements"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ProjeQtOr User guide 5.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2015, ProjeQtOr.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,562 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Tickets &mdash; ProjeQtOr User guide 5.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/projeqtor.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '5.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="top" title="ProjeQtOr User guide 5.1 documentation" href="index.html" />
+    <link rel="next" title="Requirements" href="RequirementsTest.html" />
+    <link rel="prev" title="Documents" href="Document.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="RequirementsTest.html" title="Requirements"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="Document.html" title="Documents"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ProjeQtOr User guide 5.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#tickets" id="id9">Tickets</a></li>
+<li><a class="reference internal" href="#tickets-simple" id="id10">Tickets (simple)</a></li>
+<li><a class="reference internal" href="#multi-version-selection" id="id11">Multi-version selection</a></li>
+</ul>
+</div>
+<div class="section" id="tickets">
+<span id="ticket"></span><span id="index-0"></span><h1><a class="toc-backref" href="#contents">Tickets</a><a class="headerlink" href="#tickets" title="Permalink to this headline">¶</a></h1>
+<p>A ticket is a kind of task that can not be unitarily planned.</p>
+<p>It is generally a short time activity for a single ticket, that is interesting to follow unitarily to give a feedback to the issuer or to keep trace of result.</p>
+<p>It can be globally planned as a general activity, but not unitarily.</p>
+<p>For instance, bugs should be managed through tickets :</p>
+<ul class="simple">
+<li>You can not plan bugs before they are registered.</li>
+<li>You must be able to give a feedback on each bug.</li>
+<li>You can (or at least should) globally plan bug fixing activity.</li>
+</ul>
+<p class="rubric">Planning activity</p>
+<ul class="simple">
+<li>Planning activity field allows to link the ticket with a planning activity.</li>
+<li>Work on the ticket will be included in this activity.</li>
+</ul>
+<blockquote>
+<div><div class="compound">
+<p class="compound-first"><strong>Put the real work from tickets to the resource timesheet</strong></p>
+<ul class="compound-last simple">
+<li>When a resource has entered the real work on the ticket and the ticket is linked to a planning activity.</li>
+<li>The resource is automatically assigned to this activity.</li>
+<li>Real work set on tickets is automatically set in resource timesheet.</li>
+</ul>
+</div>
+</div></blockquote>
+<p class="rubric">Restrict the entry of real work in the ticket.</p>
+<ul class="simple">
+<li>Possibility to define that only the responsible of ticket can enter real work.</li>
+<li>This behavior can be set in  <a class="reference internal" href="Administration.html#responsible-section"><span>Global parameters</span></a> screen.</li>
+</ul>
+<hr class="docutils" />
+<p class="rubric">Due dates</p>
+<ul class="simple">
+<li>Initial and planned due date allows to define a target date for solving the ticket.</li>
+</ul>
+<blockquote>
+<div><div class="compound">
+<p class="compound-first"><strong>Initial due date</strong></p>
+<ul class="compound-last simple">
+<li>If a definition of ticket delay exists for giving ticket type and urgency the date is automatically calculated with this delay.</li>
+<li>Else date is initialized to current day.</li>
+<li><a class="reference internal" href="ControlAutomation.html#delay-for-ticket"><span>Delays for tickets</span></a> screen allows to define ticket delay.</li>
+</ul>
+</div>
+<div class="compound">
+<p class="compound-first"><strong>Planned due date</strong></p>
+<ul class="compound-last simple">
+<li>Is used to define a target date after evaluation.</li>
+<li>Automatically initialized to the initial due date.</li>
+</ul>
+</div>
+<div class="compound">
+<p class="compound-first"><strong>Indicators</strong></p>
+<ul class="compound-last simple">
+<li>Possibility to define indicators to follow the respect of dates values.</li>
+<li>See: <a class="reference internal" href="ControlAutomation.html#indicator"><span>Indicators</span></a> screen.</li>
+</ul>
+</div>
+</div></blockquote>
+<hr class="docutils" />
+<p class="rubric">Version of product</p>
+<ul class="simple">
+<li>Is used to determine <strong>original version</strong> where the ticket has been identified and <strong>target version</strong> that will deliver the object of the ticket.</li>
+<li>Only versions of product linked with the project are available.</li>
+</ul>
+<div class="topic">
+<p class="topic-title first">Multi-version selection</p>
+<ul class="simple">
+<li>Allows to select multi-version of orginal and target version.</li>
+<li>Is used to specify versions of product referenced to this ticket.</li>
+<li>See: <a class="reference internal" href="#multi-version-selection"><span>Multi-version selection</span></a>.</li>
+</ul>
+</div>
+<div class="sidebar">
+<p class="first sidebar-title">Other sections</p>
+<ul class="last simple">
+<li><a class="reference internal" href="CommonSections.html#linkelement-section"><span>Linked element</span></a></li>
+<li><a class="reference internal" href="CommonSections.html#attachment-section"><span>Attachments</span></a></li>
+<li><a class="reference internal" href="CommonSections.html#note-section"><span>Notes</span></a></li>
+</ul>
+</div>
+<p class="rubric">Section: Description</p>
+<table border="1" class="docutils" id="id2">
+<caption><span class="caption-text">Tickets description section fields</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></td>
+<td>Unique Id for the ticket.</td>
+</tr>
+<tr class="row-odd"><td><strong>Name</strong></td>
+<td>Short description of the ticket.</td>
+</tr>
+<tr class="row-even"><td><strong>Ticket type</strong></td>
+<td>Type of ticket.</td>
+</tr>
+<tr class="row-odd"><td><strong>Project</strong></td>
+<td>The project concerned by the ticket.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-external-reference"><span class="xref std std-term">External reference</span></a></td>
+<td>External reference of the ticket.</td>
+</tr>
+<tr class="row-odd"><td>Urgency</td>
+<td>Urgency for treatment of the ticket, as requested by the issuer.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="Concept.html#term-requestor"><span class="xref std std-term">Requestor</span></a></td>
+<td>Contact at the origin of the ticket.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="Glossary.html#term-origin"><span class="xref std std-term">Origin</span></a></td>
+<td>Element which is the origin of the ticket.</td>
+</tr>
+<tr class="row-even"><td>Duplicate ticket</td>
+<td>Link to another ticket, to link duplicate tickets.</td>
+</tr>
+<tr class="row-odd"><td>Context</td>
+<td>List of 3 items describing the context of the ticket.</td>
+</tr>
+<tr class="row-even"><td>Product</td>
+<td>The product where ticket has been identified.</td>
+</tr>
+<tr class="row-odd"><td>Original version</td>
+<td>Version of product where ticket has been identified.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-description"><span class="xref std std-term">Description</span></a></td>
+<td>Complete description of the ticket.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>* Required field</strong></p>
+<div class="topic">
+<p class="topic-title first">Field: Context</p>
+<ul class="simple">
+<li>Contexts are initialized for IT Projects as “Environment”, “OS” and “Browser”.</li>
+<li>This can be easily changed values in <a class="reference internal" href="Context.html#context"><span>Contexts</span></a> screen.</li>
+</ul>
+</div>
+<div class="topic">
+<p class="topic-title first">Field: Original version</p>
+<ul class="simple">
+<li>Click on <img alt="Button add" src="_images/smallButtonAdd.png" /> to add a other version, see <a class="reference internal" href="#multi-version-selection"><span>Multi-version selection</span></a>.</li>
+</ul>
+</div>
+<p class="rubric">Section: Treatment</p>
+<table border="1" class="docutils" id="id3">
+<caption><span class="caption-text">Tickets treatment section fields</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Planning activity</td>
+<td>Activity where global work for this kind of ticket is planned.</td>
+</tr>
+<tr class="row-odd"><td><strong>Status</strong></td>
+<td>Actual <a class="reference internal" href="Glossary.html#term-status"><span class="xref std std-term">status</span></a> of the ticket.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="Concept.html#term-responsible"><span class="xref std std-term">Responsible</span></a></td>
+<td>Resource who is responsible for the ticket.</td>
+</tr>
+<tr class="row-odd"><td>Criticality</td>
+<td>Importance of impact on the system, as determined after analysis.</td>
+</tr>
+<tr class="row-even"><td>Priority</td>
+<td>Priority of treatment.</td>
+</tr>
+<tr class="row-odd"><td>Initial due date</td>
+<td>Initial target date for solving the ticket.</td>
+</tr>
+<tr class="row-even"><td>Planned due date</td>
+<td>Actual target date for solving the ticket.</td>
+</tr>
+<tr class="row-odd"><td>Estimated work</td>
+<td>Estimated workload needed to treat the ticket.</td>
+</tr>
+<tr class="row-even"><td>Real work</td>
+<td>Real workload spent to treat the ticket.</td>
+</tr>
+<tr class="row-odd"><td>Left work</td>
+<td>Left workload needed to finish the ticket.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-handled"><span class="xref std std-term">Handled</span></a></td>
+<td>Flag to indicate that ticket is taken into account.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="Glossary.html#term-done"><span class="xref std std-term">Done</span></a></td>
+<td>Flag to indicate that ticket has been treated.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></td>
+<td>Flag to indicate that ticket is archived.</td>
+</tr>
+<tr class="row-odd"><td>Cancelled</td>
+<td>Flag to indicate that ticket is cancelled.</td>
+</tr>
+<tr class="row-even"><td>Target version</td>
+<td>The target version of the product that will deliver the object of the ticket.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="Glossary.html#term-result"><span class="xref std std-term">Result</span></a></td>
+<td>Complete description of the resolution of the ticket.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>* Required field</strong></p>
+<div class="topic">
+<p class="topic-title first">Field: Priority</p>
+<ul class="simple">
+<li>Automatically calculated from Urgency and Criticality values. See: <a class="reference internal" href="#priority-calculation"><span>Priority value calculation</span></a>.</li>
+<li>Can be changed manually.</li>
+</ul>
+</div>
+<div class="topic">
+<p class="topic-title first">Field: Left work</p>
+<ul class="simple">
+<li>Automatically calculated as Estimated – Real.</li>
+<li>Set to zero when ticket is done.</li>
+</ul>
+</div>
+<div class="topic">
+<p class="topic-title first">Field: Target version</p>
+<ul class="simple">
+<li>Click on <img alt="Button add" src="_images/smallButtonAdd.png" /> to add a other version, see <a class="reference internal" href="#multi-version-selection"><span>Multi-version selection</span></a>.</li>
+</ul>
+</div>
+<p class="rubric">Button: Start/End work</p>
+<ul class="simple">
+<li>This button is clock on/off timer.</li>
+<li>If connected user is a resource, he has the possibility to start working on the ticket.</li>
+<li>When work is finished, he will just have to stop the timer.</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>Closing the application or starting work on another ticket will automatically stop the current ongoing work.</li>
+</ul>
+</div>
+<ul class="simple">
+<li>The spend time will automatically be converted as real work, and transferred on planning activity if it is set (decreasing left work on the activity).</li>
+</ul>
+<p class="rubric">Button: Dispatch</p>
+<p>This button allows to dispatch ticket.</p>
+<div class="figure align-center" id="id4">
+<img alt="Dispatch work dialog box" src="_images/BOX_DispatchWork.png" />
+<p class="caption"><span class="caption-text">Dispatch work dialog box</span></p>
+</div>
+<ul class="simple">
+<li>Click on <img alt="Button add" src="_images/smallButtonAdd.png" /> to add a line.</li>
+</ul>
+<table border="1" class="docutils" id="id5">
+<caption><span class="caption-text">Dispatch work dialog box fields</span><a class="headerlink" href="#id5" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Date</td>
+<td>Dispatch date.</td>
+</tr>
+<tr class="row-odd"><td>Resources</td>
+<td>Work dispatch to a resource.</td>
+</tr>
+<tr class="row-even"><td>Work</td>
+<td>Planned work to this resource.</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="priority-value-calculation">
+<span id="priority-calculation"></span><h2>Priority value calculation<a class="headerlink" href="#priority-value-calculation" title="Permalink to this headline">¶</a></h2>
+<p>Priority value is automatically calculated from <strong>Urgency</strong> and <strong>Criticality</strong> values.</p>
+<p>Priority, Urgency and Criticality values  are defined in lists of values screens. See: <a class="reference internal" href="ListsOfValues.html#priority"><span>Priorities</span></a>, <a class="reference internal" href="ListsOfValues.html#urgency"><span>Urgencies</span></a> and <a class="reference internal" href="ListsOfValues.html#criticality"><span>Criticalities</span></a> screens.</p>
+<p>In the previous screens, a name of value is set with numeric value.</p>
+<p>Priority numeric value is determined by a simple equation as follows:</p>
+<div class="topic">
+<p class="topic-title first">Equation</p>
+<ul class="simple">
+<li>[Priority value] = [Urgency value] X [Criticality value] / 2</li>
+<li>For example:<ul>
+<li>Critical priority (8) = Blocking (4) X Critical (8) / 2</li>
+</ul>
+</li>
+</ul>
+</div>
+<p class="rubric">Default values</p>
+<ul class="simple">
+<li>Default values are determined.</li>
+<li>You can change its values while respecting the equation defined above.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="tickets-simple">
+<span id="simple-ticket"></span><span id="index-1"></span><h1><a class="toc-backref" href="#contents">Tickets (simple)</a><a class="headerlink" href="#tickets-simple" title="Permalink to this headline">¶</a></h1>
+<p>Simple ticket is just a restricted view of Ticket, with limited write access to “Description” section, and limited view on “treatment” section.</p>
+<p>This view is dedicated to provide access to Ticket to users who should not be able to change treatment of Tickets, such an External Team members, but can possibly create new ones.</p>
+<div class="sidebar">
+<p class="first sidebar-title">Other sections</p>
+<ul class="last simple">
+<li><a class="reference internal" href="CommonSections.html#attachment-section"><span>Attachments</span></a></li>
+<li><a class="reference internal" href="CommonSections.html#note-section"><span>Notes</span></a></li>
+</ul>
+</div>
+<p class="rubric">Section: Description</p>
+<table border="1" class="docutils" id="id6">
+<caption><span class="caption-text">Simple ticket description section fields</span><a class="headerlink" href="#id6" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></td>
+<td>Unique Id for the ticket.</td>
+</tr>
+<tr class="row-odd"><td><strong>Name</strong></td>
+<td>Short description of the ticket.</td>
+</tr>
+<tr class="row-even"><td><strong>Project</strong></td>
+<td>The project concerned by the ticket.</td>
+</tr>
+<tr class="row-odd"><td>Urgency</td>
+<td>Urgency for treatment of the ticket, as requested by the issuer.</td>
+</tr>
+<tr class="row-even"><td>Context</td>
+<td>List of 3 items describing the context of the ticket.</td>
+</tr>
+<tr class="row-odd"><td>Version</td>
+<td>Version of product where ticket has been identified.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-description"><span class="xref std std-term">Description</span></a></td>
+<td>Complete description of the ticket.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>* Required field</strong></p>
+<div class="topic">
+<p class="topic-title first">Field: Context</p>
+<ul class="simple">
+<li>Contexts are initialized for IT Projects as “Environment”, “OS” and “Browser”.</li>
+<li>This can be easily changed values in <a class="reference internal" href="Context.html#context"><span>Contexts</span></a> screen.</li>
+</ul>
+</div>
+<div class="topic">
+<p class="topic-title first">Field: Version</p>
+<ul class="simple">
+<li>Click on <img alt="Button add" src="_images/smallButtonAdd.png" /> to add a other version, see <a class="reference internal" href="#multi-version-selection"><span>Multi-version selection</span></a>.</li>
+</ul>
+</div>
+<p class="rubric">Section: Treatment</p>
+<table border="1" class="docutils" id="id7">
+<caption><span class="caption-text">Simple ticket treatment section fields</span><a class="headerlink" href="#id7" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>Status</strong></td>
+<td>Actual <a class="reference internal" href="Glossary.html#term-status"><span class="xref std std-term">status</span></a> of the ticket.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="Concept.html#term-responsible"><span class="xref std std-term">Responsible</span></a></td>
+<td>Resource who is responsible for the ticket.</td>
+</tr>
+<tr class="row-even"><td>Due date</td>
+<td>Actual target date for solving the ticket.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="Glossary.html#term-handled"><span class="xref std std-term">Handled</span></a></td>
+<td>Flag to indicate that ticket is taken into account.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-done"><span class="xref std std-term">Done</span></a></td>
+<td>Flag to indicate that ticket has been treated.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></td>
+<td>Flag to indicate that ticket is archived.</td>
+</tr>
+<tr class="row-even"><td>Cancelled</td>
+<td>Flag to indicate that ticket is cancelled.</td>
+</tr>
+<tr class="row-odd"><td>Target version</td>
+<td>The target version of the product that will deliver the object of the ticket.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-result"><span class="xref std std-term">Result</span></a></td>
+<td>Complete description of the resolution of the ticket.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>* Required field</strong></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>Except for status, all these fields are “readonly” and can only be updated through the Ticket view.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="multi-version-selection">
+<span id="id1"></span><h1><a class="toc-backref" href="#contents">Multi-version selection</a><a class="headerlink" href="#multi-version-selection" title="Permalink to this headline">¶</a></h1>
+<p>For version fields, it possible to set multi version of product.</p>
+<div class="topic">
+<p class="topic-title first">Main and other version</p>
+<ul class="simple">
+<li>The version with smaller id will appear in the select list and is considered as the main version.</li>
+<li>Other versions are listed above.</li>
+<li>It is possible to set an ‘other’ version as the main version using the button <img alt="Button small button switch" src="_images/smallButtonSwitch.png" />.</li>
+</ul>
+</div>
+<ul class="simple">
+<li>Click on <img alt="Button add" src="_images/smallButtonAdd.png" /> to add a other version.</li>
+<li>Click on <img alt="Button icon delete" src="_images/buttonIconDelete.png" /> to delete a version.</li>
+</ul>
+<div class="figure align-center" id="id8">
+<img alt="Add other version dialog box" src="_images/BOX_AddOtherVersion.png" />
+<p class="caption"><span class="caption-text">Add other version dialog box</span></p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/Projeqtor_Logo_White.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Tickets</a><ul>
+<li><a class="reference internal" href="#priority-value-calculation">Priority value calculation</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tickets-simple">Tickets (simple)</a></li>
+<li><a class="reference internal" href="#multi-version-selection">Multi-version selection</a></li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="Document.html"
+                        title="previous chapter">Documents</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="RequirementsTest.html"
+                        title="next chapter">Requirements</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="RequirementsTest.html" title="Requirements"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="Document.html" title="Documents"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ProjeQtOr User guide 5.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2015, ProjeQtOr.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
+    </div>
+  </body>
+</html>
